@@ -11,15 +11,19 @@
             <h1>Rite Aid</h1>
 
             <form>
+                <fieldset>
+                    <legend>Costumer</legend>
                 <div class="row">
+                    <fieldset>
                     <div>
                         <label for="firstname">First </label>
                         <input id="firstname" name="first_name" type="text">
                     </div>
                     <div>
                         <label for="lastname">Last</label>
-                        <input id="lastname" name="last_name" type="type">
+                        <input id="lastname" name="last_name" type="text">
                     </div>
+                    </fieldset>
                 </div>
                 <div>
                     <div>
@@ -48,6 +52,32 @@
                         <input type="radio" id="large" name="size">
                         <label for="large">Large</label>
                     </div>
+                </div>
+                <div>
+                    <div>
+                        <input type="checkbox" id="sprinkles" name="sprinkles" value="sprinkles">
+                        <label for="sprinkles">Sprinkles</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="whippedCream" name="whippedCream" value="whippedCream">
+                        <label for="whippedCream">WhippedCream</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="carmel" name="carmel" value="carmel">
+                        <label for="carmel">Carmel</label>
+                    </div>
+                    <div>
+                        <label for="container">Please choose One</label>
+                        <select name="container" id="container">
+                            <option value="cup">Plastic cup</option>
+                            <option value="sugar">Sugar cone</option>
+                            <option value="waffle">Waffle cone</option>
+                        </select>
+                    </div>
+                </div>
+                <div>
+                    <label for="SpecialRequests">SpecialRequest</label>
+                    <textarea id="SpecialRequests" name="SpecialRequest" rows="4" cols="10" placeholder="Allergic to peanuts, substitution, etc."></textarea>
                 </div>
             </form>
         </div>
